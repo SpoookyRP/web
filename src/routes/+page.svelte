@@ -2,6 +2,7 @@
     import Fa from "svelte-fa";
     import { faInstagram, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons';
     import { base } from "$app/paths";
+    import Layout from "./layout.svelte";
 </script>
 
 <svelte:head>
@@ -9,12 +10,11 @@
 </svelte:head>
 
 <div id="container">
-    <img class="background" src="{base}/images/background.png" alt="background">
-    
+    <Layout/>
     <div class="upper-menu">
         <img src="{base}/images/logo_text.png" alt="logo">
         <div class="sites">
-            <a href="{base}/404">Jak se připojit?</a>
+            <a href="{base}/connect">Jak se připojit?</a>
             <a href="{base}/about">O nás</a>
             <a href="{base}/faq">FAQ</a>
         </div>
@@ -37,16 +37,6 @@
 <style lang="scss">
     #container {
         font-family: "Popins", sans-serif;
-    }
-
-    .background {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
     }
 
     .upper-menu {

@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <title>FAQ | SpookyRP</title>
+    <title>Jak se připojit? | SpookyRP</title>
 </svelte:head>
 
 <div id="containter">
