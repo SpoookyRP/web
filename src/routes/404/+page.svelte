@@ -1,15 +1,10 @@
 <script>
     import { base } from "$app/paths";
-
-    export const load = async ({ fetch }) => {
-        return {
-            props: {},
-            meta: {
-                title: '404 | SpookyRP'
-            }
-        };
-    };
 </script>
+
+<svelte:head>
+    <title>Error | SpookyRP</title> 
+</svelte:head>
 
 <div id="container">
     <h1>404</h1>

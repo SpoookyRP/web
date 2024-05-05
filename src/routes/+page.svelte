@@ -2,16 +2,11 @@
     import Fa from "svelte-fa";
     import { faInstagram, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons';
     import { base } from "$app/paths";
-
-    export const load = async ({ fetch }) => {
-        return {
-            props: {},
-            meta: {
-                title: 'Home | SpookyRP'
-            }
-        };
-    };
 </script>
+
+<svelte:head>
+    <title>Home | SpookyRP</title> 
+</svelte:head>
 
 <div id="container">
     <img class="background" src="{base}/images/background.png" alt="background">
