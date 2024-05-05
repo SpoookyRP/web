@@ -12,9 +12,12 @@
 		<link rel="modulepreload" href="/_app/immutable/chunks/paths.DQV8e5z9.js">
 		<link rel="modulepreload" href="/_app/immutable/entry/app.DunY3FmX.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/index.ECfeKHri.js">
+		<link rel="modulepreload" href="/_app/immutable/nodes/0.C-rknlq8.js">
+		<link rel="modulepreload" href="/_app/immutable/nodes/4.Bkqpvme4.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">
+		<div style="display: contents">   
+			
 			<script>
 				{
 					__sveltekit_1inehys = {
@@ -23,11 +26,18 @@
 
 					const element = document.currentScript.parentElement;
 
+					const data = [null,null];
+
 					Promise.all([
 						import("/_app/immutable/entry/start.DyHfgugN.js"),
 						import("/_app/immutable/entry/app.DunY3FmX.js")
 					]).then(([kit, app]) => {
-						kit.start(app, element);
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
 					});
 				}
 			</script>
