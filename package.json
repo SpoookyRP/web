@@ -1,0 +1,31 @@
+{
+	"name": "web",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deploy": "npm run build && npx gh-pages -d build -t true"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-static": "^3.0.1",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"node-sass": "^9.0.0",
+		"sass": "^1.76.0",
+		"scss": "^0.2.4",
+		"svelte": "^4.2.7",
+		"svelte-add": "^2024.4.9-0.0",
+		"svelte-preprocess": "^5.1.4",
+		"vite": "^5.0.3"
+	},
+	"type": "module",
+	"dependencies": {
+		"@fortawesome/free-brands-svg-icons": "^6.5.2",
+		"@fortawesome/free-solid-svg-icons": "^6.5.2",
+		"svelte-fa": "^4.0.2"
+	},
+	"homepage": "https://spookyrp.cz"
+}
