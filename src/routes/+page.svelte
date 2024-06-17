@@ -1,90 +1,19 @@
 <script>
-    import Fa from "svelte-fa";
-    import { faInstagram, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons';
     import { base } from "$app/paths";
-    import Layout from "./layout.svelte";
 </script>
 
 <svelte:head>
     <title>Home | SpookyRP</title> 
 </svelte:head>
 
-<div id="container">
-    <Layout/>
-    <div class="upper-menu">
-        <img src="{base}/images/logo_text.png" alt="logo">
-        <div class="sites">
-            <a href="{base}/connect">Jak se připojit?</a>
-            <a href="{base}/about">O nás</a>
-            <a href="{base}/faq">FAQ</a>
-        </div>
-    </div>
-
-    <div class="left-menu">
-        <a href="{base}/"><Fa icon={faInstagram} size="3x"/></a>
-        <a href="https://discord.gg/eMbGavcXym"><Fa icon={faDiscord} size="3x"/></a>
-        <a href="{base}/"><Fa icon={faYoutube} size="3x"/></a>
-    </div>
-
-    <div class="right-menu">
-        <h1>Vítej na našich stránkách!</h1>
-        <p>Spooky RP je český roleplay server na platformě FiveM. Na našem serveru se snažíme vytvořit co nejlepší zážitek pro hráče, ať už jde o kvalitní roleplay, nebo o příjemnou komunitu.</p>
-    </div>
-
-    <img class="character" src="{base}/images/character.webp" alt="character">
+<div class="right-menu">
+    <h1>Vítej na našich stránkách!</h1>
+    <p>Spooky RP je český roleplay server na platformě FiveM. Na našem serveru se snažíme vytvořit co nejlepší zážitek pro hráče, ať už jde o kvalitní roleplay, nebo o příjemnou komunitu.</p>
 </div>
 
-<style lang="scss">
-    #container {
-        font-family: "Popins", sans-serif;
-    }
+<img class="character" src="{base}/images/character.webp" alt="character">
 
-    .upper-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20%;
-        height: 10vh;
-
-        .sites {
-            display: flex;
-            gap: 80px;
-            font-size: 1.5rem;
-
-            a {
-                color: white;
-                text-decoration: none;
-            }
-        }
-    }
-
-    .left-menu {
-        position: absolute;
-        top: 50%;
-        left: 5%;
-        transform: translateY(-50%);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 20px;
-
-        a {
-            color: white;
-            text-decoration: none;
-        }
-        
-        a:nth-child(1):hover {
-            color: #d00b86;
-        }
-
-        a:nth-child(2):hover {
-            color: #7289da;
-        }
-
-        :nth-child(3):hover {
-            color: #ff0000;
-        }
-    }
+<style lang="scss"> 
     
     .right-menu {
         position: absolute;
