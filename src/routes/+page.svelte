@@ -7,7 +7,7 @@
 </svelte:head>
 
 <div class="right-menu">
-    <h1>Vítej na našich stránkách!</h1>
+    <h1>Vítej na stránce <span>spookyrp.cz</span></h1>
     <p>Spooky RP je český roleplay server na platformě FiveM. Na našem serveru se snažíme vytvořit co nejlepší zážitek pro hráče, ať už jde o kvalitní roleplay, nebo o příjemnou komunitu.</p>
 </div>
 
@@ -22,7 +22,7 @@
         transform: translateY(-50%);
         width: 40%;
         color: white;
-        background-color: rgba(20, 26, 31, 0.7); /* Změněno na rgba */
+        background-color: rgba(20, 26, 31, 0.7);
         padding: 50px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -30,6 +30,10 @@
         h1 {
             font-size: 3rem;
             margin-bottom: 20px;
+
+            span {
+                color: #f07911;
+            }
         }
 
         p {
